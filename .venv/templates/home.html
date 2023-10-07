@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Dust Trackers</title>
     <link rel="stylesheet" href="static/estilohome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="static/images/logo.png" alt="Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="emit.html">What is EMIT</a></li>
-                <li><a href="dusttrackers.html">Dust Trackers</a></li>
-                <li><a href="sobre-nos.html">About us</a></li>
+                <li><a onclick="location.href='/emit';">What is EMIT</a></li>
+                <li><a onclick="location.href='/dust';">Dust Trackers</a></li>
+                <li><a onclick="location.href='/aboutus';">About us</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +28,7 @@
         <div class="texto">
             <h1>Mineral dust is killing thousands of people in North Africa.</h1>
             <p>Help us to save innocent lives. Click the button below!</p>
-            <a href="#" class="botao">Know about Dust Trackers</a>
+            <a onclick="location.href='/dust';" class="botao">Know about Dust Trackers</a>
         </div>
     </section>
 

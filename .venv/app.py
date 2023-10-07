@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, json, redirect, make_response, send_file
 
 app = Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 
 @app.route('/')
