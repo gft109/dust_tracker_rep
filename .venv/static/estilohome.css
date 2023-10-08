@@ -3,6 +3,7 @@ body {
     font-family: 'Sora';
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 header {
@@ -16,11 +17,10 @@ header {
     z-index: 1000;
 }
 
-
+/* Adicione esta regra para tornar o header responsivo */
 .logo img {
-    margin-left: 30%;
-    max-height: 150px;
-    width: 250px;
+    max-height: 100px; /* Limite a altura do logo */
+    width: auto; /* Permita a largura variável */
 }
 
 nav ul {
@@ -32,7 +32,7 @@ nav ul {
 
 nav ul li {
     font-size: 18px;
-    float: right;
+    /* Evite "float: right;" que pode causar problemas em telas menores */
 }
 
 nav ul li a {
@@ -46,7 +46,6 @@ nav ul li a {
     align-items: center;
     padding: 0;
     position: relative;
-
 }
 
 .imagem-fundo {
@@ -61,24 +60,24 @@ nav ul li a {
 
 .texto {
     flex: 1;
-    padding: 20px;
     border-radius: 5px;
     text-align: center;
-    max-width: 700px;
+    max-width: 100%;
     position: absolute;
-    top: 45%;
-    left: 75%;
+    top: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
 }
 
+/* Faça ajustes nos tamanhos de fonte para serem proporcionais */
 .texto h1 {
-    font-size: 50px;
+    font-size: 4vw; /* Use uma unidade relativa, como vw (viewport width) */
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .texto p {
-    font-size: 25px;
+    font-size: 2vw; /* Use uma unidade relativa, como vw (viewport width) */
     font-weight: 200;
 }
 
@@ -88,20 +87,39 @@ nav ul li a {
     background-color: #F2DE18;
     color: #1E1E1E;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 1.5vw 3vw; /* Use uma unidade relativa, como vw (viewport width) */
     border-radius: 5px;
     text-align: center;
-    margin-top: 20px;
-    box-shadow: 10px 10px 25px 10px #B08533;
-
+    margin-top: 1vw; /* Use uma unidade relativa, como vw (viewport width) */
+    box-shadow: 1vw 1vw 2.5vw 1vw #B08533; /* Use uma unidade relativa, como vw (viewport width) */
 }
 
+/* Estilos para o footer */
 footer {
-    background-color: #1e1e1e;
+    background-color: #1E1E1E; /* Cor de fundo preto */
     color: white;
     text-align: center;
-    padding: 5px 0;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    max-width: 100%;
 }
 
+@media screen and (max-width: 552px) {
+    .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .texto h1 {
+        font-size: 10vw; /* Use uma unidade relativa, como vw (viewport width) */
+    }
+    .texto p {
+        font-size: 7vw;
+        font-weight: 200; /* Use uma unidade relativa, como vw (viewport width) */
+    }
+    .botao {
+        padding: 3vw 6vw; /* Use uma unidade relativa, como vw (viewport width) */
+        margin-top: 3vw; /* Use uma unidade relativa, como vw (viewport width) */
+    }
+}

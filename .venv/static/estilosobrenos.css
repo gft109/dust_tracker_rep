@@ -1,16 +1,40 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Sora, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para o header */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #1E1E1E;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
+
+/* Estilo para o logo dentro do header */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para o título dentro do header */
+header h1 {
+    font-size: 24px; /* Tamanho do título em telas maiores */
+}
+
+/* Media query para ajustar o header em telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduzir o espaçamento interno do header */
+    }
+
+    header h1 {
+        color:#1E1E1E; /* Reduzir o tamanho do título em telas menores */
+    }
+}
+
 
 
 footer {
