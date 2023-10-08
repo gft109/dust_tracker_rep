@@ -1,0 +1,9 @@
+!pip3 install earthaccess
+!pip3 install hvplot==0.8.1
+!pip3 install rasterio
+!pip3 install netCDF4
+!conda install -c pyviz datashader
+!pip install spectral
+!pip install leafmap xarray rioxarray netcdf4 localtileserver
+pip install Cartopy
+pip install geoviews
